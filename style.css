@@ -1,0 +1,196 @@
+.body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to top, beige 0%, black 100%);
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.calculator {
+  width: 300px;
+  min-width: 300px; /*Shrinks on lesser resolutions*/
+  box-sizing: border-box;
+  padding: 20px;
+  background: black;
+  border-radius: 20px;
+  color: white;
+}
+
+.calculator_screen {
+  background: gray;
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  border: 0;
+  text-align: right;
+  font-size: 40px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.button {
+  font-family: inherit; /*Inputs don't inherit by default*/
+  font-size: 30px;
+  border-radius: 7px;
+  border: 0;
+  padding: 0;
+  display: flex; /*Not necessary for now*/
+  justify-content: center;
+  align-items: center;
+  outline: none;
+}
+
+.calculator_keyboard {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.calculator_heading {
+  font-family: "Slabo 27px", serif;
+}
+
+.calculator_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calculator_title {
+  margin: 0;
+  font-size: 25px;
+}
+
+.calculator_sun-battery {
+  width: 100px;
+  height: 30px;
+  border-radius: 3px;
+  background-color: brown;
+}
+
+.calculator_screen-container {
+  margin: 20px 0;
+  border-radius: 5px; /*For later*/
+}
+
+.button_type_plus {
+  grid-row: span 2;
+}
+
+.calculator {
+  padding: 20px 25px 45px;
+  border-top-left-radius: 100% 30px;
+  border-top-right-radius: 100% 30px;
+  border-bottom-left-radius: 100% 60px;
+  border-bottom-right-radius: 100% 60px;
+}
+
+.calculator {
+  background: radial-gradient(
+    ellipse farthest-corner at 20% 65%,
+    #5e6479,
+    #161213
+  );
+}
+
+.calculator_sun-battery {
+  width: 107px;
+  height: 30px;
+  border-radius: 3px;
+  background-color: #3d2115;
+  background-image: repeating-linear-gradient(
+    to right,
+    transparent,
+    transparent 26px,
+    rgba(255, 255, 255, 0.1) 26px,
+    rgba(255, 255, 255, 0.1) 27px
+  );
+}
+
+.calculator_sun-battery {
+  box-shadow: 0 -3px 5px -3px rgba(255, 255, 255, 0.2),
+    5px 0 3px -5px rgba(255, 255, 255, 0.8), 0 2px 5px -2px rgba(0, 0, 0, 0.5),
+    -3px 0 3px -1px rgb(0, 0, 0, 0.8), inset 0 -5px 3px -3px rgba(0, 0, 0, 0.5),
+    inset 5px 0 5px -2px rgba(0, 0, 0, 0.8);
+}
+
+.calculator_sun-battery-container {
+  border-radius: 3px; /* To fix border overflow */
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.calculator_screen {
+  background-image: linear-gradient(-155deg, #44443a 0%, #656f66 100%);
+  box-shadow: 0 -4px 4px -3px rgba(255, 255, 255, 0.3),
+    5px 0 3px -5px rgba(255, 255, 255, 0.8), 0 5px 5px -3px rgba(0, 0, 0, 0.5),
+    -3px 0 3px -1px rgba(0, 0, 0, 0.8), inset 0 -5px 3px -3px rgba(0, 0, 0, 0.5),
+    inset 5px 0 5px -2px rgba(0, 0, 0, 0.8);
+}
+
+.calculator {
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.7), 0 0 20px 0 rgba(0, 0, 0, 0.5),
+    0 0 25px 0 rgba(0, 0, 0, 0.3), 10px 0 4px 10px rgba(0, 0, 0, 0.3),
+    inset 0 0px 3px 0 rgba(0, 0, 0, 0.7), inset 0 0 10px 0 rgba(0, 0, 0, 0.5),
+    inset 0 -25px 5px 0 rgba(0, 0, 0, 0.2),
+    inset 0 -5px 10px 0 rgba(255, 255, 255, 0.3);
+}
+
+.calculator_keyboard {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 40px;
+}
+
+.button {
+  background: linear-gradient(25deg, #525a65, #3b424c);
+  color: rgba(255, 255, 255, 0.8);
+  box-shadow: inset 2px 1px 1px 0 rgba(255, 255, 255, 2),
+    inset -3px 2px 5px 0 rgba(0, 0, 0, 0.2), 4px 1px 1px 0 rgba(0, 0, 0, 0.5),
+    -1px 3px 1px 0 rgba(0, 0, 0, 0.5), 4px -3px 1px 0 rgba(0, 0, 0, 0.5),
+    -1px -1px 5px 0 rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.button:active {
+  box-shadow: inset 2px 1px 1px 0 rgba(255, 255, 255, 2),
+    inset -3px 2px 5px 0 rgba(0, 0, 0, 0.2), 3px 1px 1px 0 rgba(0, 0, 0, 0.5),
+    -1px -1px 1px 0 rgba(0, 0, 0, 0.5), 3px -1px 1px 0 rgba(0, 0, 0, 0.5),
+    -1px -1px 5px 0 rgba(0, 0, 0, 0.5), 4px 0 1px 0 rgba(255, 255, 255, 3);
+
+  transform: translate (1px, -1px);
+}
+
+.clear-btn {
+  background: #7ab0cb;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #202327f3;
+  padding: 10px;
+  color: #eee;
+  font-size: 14px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  color: aqua;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
